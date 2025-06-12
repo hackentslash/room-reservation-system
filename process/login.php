@@ -20,7 +20,7 @@ try {
         $_SESSION['user_id'] = $user['user_id'];
         $_SESSION['user_role'] = $user['user_role'];
 
-        header("Location: ../".$user['user_role']."/dashboard.php");
+        header("Location: ../".$user['user_role']."/".$user['user_role']."_dashboard.php");
         exit();
     } else {
         $_SESSION['login_error'] = "Invalid username or password.";
